@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+// you don't need 'use strict';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+// 3 things you need in every class component you create
 
+// 1. import React
+import React from 'react';
+// import component files that I want to use in App
+import Main from './Main.js';
+
+// 2. declare the class
+class App extends React.Component {
+  
+
+  render() {
+    return (
+      <>
+        <header>
+          <h1>Welcome to 301!</h1>
+        </header>
+       <Main/>
+        <footer>
+          &copy; 2023; Code Fellows
+        </footer>
+      </>
+    );
+    
+  }
+};
+
+// 3. export the class
 export default App;
