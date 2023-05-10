@@ -30,13 +30,13 @@ class Person extends React.Component {
     // console.log(this.props.name);
 
     // in my JSX (the stuff that looks like HTML), I can write JavaScript inside {}
-    // in this case i'm just passing a JavaScript variable that contains the name value
+    // in this case i'm just passing a JavaScript variable that contains the name value: this.props.name
     return (
       <article className="person">
         <h3>{this.props.name}</h3>
-        <p>{this.state.greetings} greetings</p>
+        <p>👋 {this.state.greetings} greetings</p>
 
-        {/* In React we can put our event listners inline like this. */}
+        {/* In React we can put our event listeners inline like this. */}
         {/* onClick listens for a click event and when there is a click it invokes this.handleGreetings */}
         <p onClick={this.handleGreetings}>Say Hello</p>
         <img

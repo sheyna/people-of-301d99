@@ -6,6 +6,7 @@
 import React from 'react';
 // import component files that I want to use in App
 import Main from './Main.js';
+import Person from './Person';
 // import the CSS
 import './App.css';
 
@@ -15,7 +16,7 @@ class App extends React.Component {
   // We need to call a render function that will return our JSX 
   // (JSX is the stuff that looks like HTML)
   render() {
-    // is called a "Frag" or fractional element
+    // <> is called a "Frag" or fractional element
     //  the <> allows use to use multiple tags as siblings
     // it will not render on our page
     return (
